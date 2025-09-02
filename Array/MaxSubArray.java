@@ -1,7 +1,7 @@
 import java.util.*;
 
 
-// brute for approach : Time complexity O(n3)
+// brute for approach : Time complexity O(n^3)
 public class MaxSubArray{
     
     public static void maxSubArray(int numbers[]){
