@@ -17,7 +17,12 @@ public class ArrayCC{
     public static void main(String[] args){
         int arr[]={1,2,3,4,5};
 
-        System.out.println(Arrays.toString(PrefixSum(arr)));
-        System.out.println(PrefixSum(arr));
+        //another way print prefixSum array
+        int originalArray[]=PrefixSum(arr);
+        System.out.print("[");
+        for(int i=0;i<originalArray.length;i++){
+            System.out.print(originalArray[i] +",");
+        }
+        System.out.print("]");
     }
 }

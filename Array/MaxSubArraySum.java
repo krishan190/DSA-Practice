@@ -11,7 +11,7 @@ public class ArrayCC{
             prefixSum[i]=prefixSum[i-1]+numbers[i];
         }
 
-        return prefixSum;
+        
     }
 
 
