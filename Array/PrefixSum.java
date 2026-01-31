@@ -26,3 +26,20 @@ public class ArrayCC{
         System.out.print("]");
     }
 }
+
+//In Javascript Solution
+
+var PrefixSum = function( numbers) {
+     const prefixSum=[];
+
+        prefixSum[0]=numbers[0];
+
+        for(let i=1;i<numbers.length;i++){
+            prefixSum[i]=prefixSum[i-1]+numbers[i];
+        }
+        return prefixSum;
+};
+
+
+const arr=[1, 2, 3, 4, 5]
+console.log(PrefixSum(arr));
