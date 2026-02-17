@@ -37,3 +37,15 @@ function countFreq(arr, n) {
 const arr = [10, 5, 10, 15, 10, 5];
 const n = arr.length;
 countFreq(arr, n);
+
+// frequency of Character
+
+function charFrequency(str) {
+    let freq = {};
+    for (let ch of str) {
+        freq[ch] = (freq[ch] || 0) + 1;
+    }
+    return freq;
+}
+
+console.log(charFrequency("abacbcda"))
