@@ -4,7 +4,7 @@ let arr = [1, 2, 3, 2, 1, 4];
 let result = arr.filter((value, index, array) => {
     return array.indexOf(value) !== index;
 })
-console.log(result);//[1,2]
+console.log(result);//[2,1]
 
 // | index | value | array.indexOf(value) | comparison (`!== index`) | included? |
 // | ----: | ----: | -------------------: | -----------------------: | --------: |
