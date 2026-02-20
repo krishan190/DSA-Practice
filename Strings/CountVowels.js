@@ -10,3 +10,15 @@ function countVowels(str) {
 }
 
 console.log(countVowels(str));
+
+// we use below instead of var we use let it gives reference error or also we use IIFE function also
+
+function show() {
+    {
+        var a = 10;
+        var b = 20;
+    }
+    console.log(`A: ${a},B:${b}`);
+}
+
+show();
