@@ -38,7 +38,7 @@ import java.util.*;
 
 public class MaxSubArray{
     
-    public static void maxSubArray(int numbers[]){
+    public static int maxSubArray(int numbers[]){
           int currSum = 0;
         int maxSum = Integer.MIN_VALUE;
         int prefix[]= new int[numbers.length];
@@ -48,10 +48,6 @@ public class MaxSubArray{
         for(int i=1;i<prefix.length;i++){
             prefix[i]=prefix[i-1]+numbers[i];
         }
-        
-        // for(int i=0;i<prefix.length;i++){
-        //     System.out.println(prefix[i]);
-        // }
         
         for(int i=0;i<numbers.length;i++){
             int start =i;
