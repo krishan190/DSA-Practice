@@ -21,14 +21,11 @@ function secondLargest(arr) {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] > max) {
             max = arr[i];
-        }
-    }
-
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] > secondMax && arr[i] !== max) {
+        } else if (arr[i] > secondMax && arr[i] !== max) {
             secondMax = arr[i];
         }
     }
+
     return secondMax;
 }
 let arr2 = [10, 30, 35, 90, 85]
