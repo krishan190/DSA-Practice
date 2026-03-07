@@ -22,7 +22,7 @@ import java.util.*;
 
 public class SortArray{
     
-    public static void SelectionSort(int numbers[],int n){
+    public static void SelectionSort(int a[],int n){
         for(int i=0;i<n-1;i++){
             int min=i;
             for(int j=i+1;j<n;j++){
