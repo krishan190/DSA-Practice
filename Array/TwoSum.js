@@ -1,30 +1,35 @@
 const twoSum = (array, goal) => {
-    let indexes = [];
+  let indexes = [];
 
-    for (let i = 0; i < array.length; i++) {
-        for (let j = i + 1; j < array.length; j++) {
-            if (array[i] + array[j] === goal) {
-                indexes.push(i);
-                indexes.push(j);
-            }
-        }
+  for (let i = 0; i < array.length; i++) {
+    for (let j = i + 1; j < array.length; j++) {
+      if (array[i] + array[j] === goal) {
+        indexes.push(i);
+        indexes.push(j);
+      }
     }
-    return indexes;
-}
+  }
+  return indexes;
+};
 
 // optimal solution
 
-const input = [1, 3, 10, 11, 13];
+function twoSum(arr, target) {
+  let left = 0;
+  let right = arr.length - 1;
 
-function twoSum(array, target) {
-    for (let i = 0; i < array.length; i++) {
-        const diffIndex = array.indexOf(target - array[i]);
-        console.log("diffIndex", diffIndex);
-        if (diffIndex >= 0 && diffIndex !== i) {
-            return [i, diffIndex];
-        }
+  while (left < right) {
+    let sum = arr[left] + arr[right];
+
+    if (sum === target) {
+      return [left, right];
+    } else if (sum < target) {
+      left++;
+    } else {
+      right--;
     }
-    return []; // no solution found
+  }
+  return [];
 }
 
-console.log(twoSum(input, 13));
+console.log(twoSum([1, 2, 3, 4, 5, 6], 6));
