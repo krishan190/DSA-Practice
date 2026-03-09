@@ -1,3 +1,25 @@
+/*
+Algorithm: Optimized Bubble Sort
+
+Start from the first element of the array.
+
+Compare the current element with the next element.
+
+If the current element is greater than the next element, swap them.
+
+Continue comparing adjacent elements until the end of the array.
+
+After each pass, the largest element moves to its correct position at the end.
+
+Repeat the process for the remaining unsorted portion of the array.
+
+Use a swap flag:
+
+If no swaps occur during a pass, the array is already sorted.
+Stop the algorithm early
+
+*/
+
 import java.util.*;
 
 public class SortArray{
