@@ -25,3 +25,21 @@ function mergeSorted(arr1, arr2) {
 }
 
 console.log(mergeSorted([1, 2, 3], [2, 5, 6]));
+
+// leetcode problem without using extra space merge two sorter
+
+var merge = function (nums1, m, nums2, n) {
+  let idx = m + n - 1,
+    i = m - 1,
+    j = n - 1;
+  while (i >= 0 && j >= 0) {
+    if (nums1[i] >= nums2[j]) {
+      nums1[idx--] = nums1[i--];
+    } else {
+      nums1[idx--] = nums2[j--];
+    }
+  }
+  while (j >= 0) {
+    nums1[idx--] = nums2[j--];
+  }
+};
