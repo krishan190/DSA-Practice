@@ -1,3 +1,5 @@
+// Remove all occurance
+
 function LongestUniqueStr(s) {
     let maxLength = 0;
 
