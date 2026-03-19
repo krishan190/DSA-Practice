@@ -2,12 +2,12 @@ function palindrom(n) {
   let revNum = 0;
   let dup = n;
 
-  while (n > 0) {
-    let ld = n % 10;
+  while (dup > 0) {
+    let ld = dup % 10;
     revNum = revNum * 10 + ld;
-    n = Math.floor(n / 10);
+    dup = Math.floor(dup / 10);
   }
-  return dup === revNum;
+  return n === revNum;
 }
 
-console.log(palindrom(121));
+console.log(palindrom(123));
