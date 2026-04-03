@@ -9,7 +9,22 @@ for (let index of string) {
     }
 }
 
+console.log(frequency);
+
 //count of each character even including space
+
+/*🔹 Algorithm (Step-by-step)
+Start
+Take the input string str
+Loop through each character in the string
+For each character:
+Find its first position using indexOf(char)
+Find its last position using lastIndexOf(char)
+Compare both positions:
+If they are equal → character appears only once
+Return that character immediately
+If no such character is found → return null (or "not found")
+End */
 
 function firstNonRepeatingChar(str) {
     for (let char of str) {
