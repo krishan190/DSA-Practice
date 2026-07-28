@@ -25,3 +25,11 @@ var singleNumber = function (nums) {
 // for the same value it gives 0
 // for different value it gives 1
 
+
+var singleNumber = function (nums) {
+    let xor = 0;
+    for(let i=0;i<nums.length;i++){
+        xor=xor^nums[i]
+    }
+    return xor;
+};
