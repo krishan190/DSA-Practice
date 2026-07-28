@@ -18,3 +18,10 @@ var singleNumber = function (nums) {
     if (hash[nums[i]] == 1) return nums[i];
   }
 };
+
+
+// By bitwise XOR 
+
+// for the same value it gives 0
+// for different value it gives 1
+
